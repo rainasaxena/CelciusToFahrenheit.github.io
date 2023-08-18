@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#panel{
+    /* border-spacing: 10px; */
+    /* border-collapse: separate; */
+    border-color: rgba(61, 64, 81, 0.811);
+    border-style:outset ;
+    border-width: 20px;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:20px;
+    height:600px;
+    width:600px;
+    background-color: rgba(239, 239, 239, 0.811);
+    border-radius: 300px;
+    box-shadow: 0 0 60px 1px rgb(0, 0, 0);
+    transition: 1s;
+}
+
+#panel:hover{
+    box-shadow: 0 0 10px 1px rgb(200, 230, 255);
+}
+
+.celcius{
+   position:relative;
+   
+}
+
+.celcius label{
+    padding:0px 10px;
+    font-size: 40px;
+    font-weight:500;
+    color: rgb(39, 39, 39);
+}
+.celinput input{
+    outline:none;
+    text-align: center;
+    padding:0px 10px;
+    border-radius: 30px;
+    width:200px;
+    height:60px;
+    border: 0px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: inset 0px 0px 5px grey;
+    font-size: 40px;
+    
+}
+
+.fahrenheit label{
+    color: rgb(39, 39, 39);
+    position: relative;
+    font-weight:500;   
+    top:70%;
+    font-size: 40px;
+}
+
+.output{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top: 6%;
+    width:200px;
+    height:60px;
+    border: 0px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: inset 0px 0px 5px grey;
+    border-radius: 30px;
+    font-size: 40px;
+}
